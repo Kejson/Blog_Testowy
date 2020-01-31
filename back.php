@@ -1,11 +1,34 @@
 <?php
-
- $connectToDb = mysqli_connect('localhost','root','blog_testowy)or die("Eror");
- //$nazwaBazy jeszzce nie ma
+  //Nazwy uzytkowników, haseł, maili, telefonów etc etc
 
 
+  // Połaczenie z baza
+   $connectDB = mysqli_connect('localhost','root','blog_testowy')or die('Eror');
+
+
+    //Sprawdzenie czy istnieje
 
 
 
-mysqli_close($connectToDb);
+
+//Sprawdzenie czy jest w bazie danych
+
+
+
+//Dodanie uzytkownika, jego danych
+
+
+
+//Output na ekran
+
+
+
+//Cos jeszcze
+
+
+
+
+mysqli_close($connectDB);
+
+
 ?>
