@@ -5,20 +5,47 @@
     box-sizing: border-box;
 }
 
-html{
+body{
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    display: grid;
+@media (min-device-width:1200px){
+    .UI{
+        width: auto;
+        height: 20vh;
+        position: relative;
+        justify-self: right;
+        margin: 0.5em;
+        display: grid;
+        justify-content: right;
+    }
+    
+    #search{
+        width: 200px;
+    }
 }
 
-.UI{
-    width: auto;
-    height: auto;
-    position: relative;
-    justify-self: right;
-    margin: 5px;
+@media (max-device-width:1024px){
+    .UI{
+        width: auto;
+        display: grid;
+        justify-self: center;
+        height: 10vh;
+    }
+    .form-group{
+        display: grid;
+    }
+    .form-group > .btn-success{
+        justify-self: center;
+    }
+}
+
+.UI > hr{
+    background-color: #a49f9e;
 }

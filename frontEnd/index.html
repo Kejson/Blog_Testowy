@@ -14,9 +14,16 @@
     <link rel="stylesheet" href="src/style/style.css" type="text/css">
 </head>
 <body>
-    <section class="UI">
-        <button class="btn btn-info"> <i class="fas fa-users"></i> Zaloguj się</button>
-        <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Zarejestruj się</button>
+    <section class="UI row">
+        <article id="user" class="col-12">
+            <button class="btn btn-info mt-3"> <i class="fas fa-users"></i> Zaloguj się</button>
+            <button class="btn btn-primary mt-3"><i class="fas fa-user-plus"></i> Zarejestruj się</button>
+        </article>
+        <hr>
+        <form class="form-group col-12" method="GET">
+            <input type="text" class="form-control" id="search" placeholder="Szukaj...">
+            <button class="btn btn-success my-3" type="submit">Szukaj</button>
+        </form>
     </section>
 
     <script
