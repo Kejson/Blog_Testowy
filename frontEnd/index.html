@@ -17,15 +17,26 @@
     <section class="UI row">
         <article id="user" class="col-12">
             <button class="btn btn-info mt-3"> <i class="fas fa-users"></i> Zaloguj się</button>
-            <button class="btn btn-primary mt-3"><i class="fas fa-user-plus"></i> Zarejestruj się</button>
+            <a class="btn btn-primary mt-3" href="../frontEnd/podstrony/rejestracja.html" target="blank"> <i class="fas fa-user-plus"></i> Zarejestruj się</a>
+            <section class="loguj">
+                <form class="form-group" method="POST">
+                    <input type="text" class="form-control" placeholder="Nazwa użytkownika...">
+                    <input type="password" class="form-control" placeholder="Hasło...">
+                    <button class="btn btn-success" type="submit">Zaloguj</button>
+                </form>
+            </section>
         </article>
         <hr>
         <form class="form-group col-12" method="GET">
             <input type="text" class="form-control" id="search" placeholder="Szukaj...">
-            <button class="btn btn-success my-3" type="submit">Szukaj</button>
+            <button class="btn btn-success my-3" type="submit"> <i class="fas fa-search"></i> Szukaj</button>
         </form>
     </section>
 
+    <footer>
+        <p>Page made by Sebastian Siarczyński and Kamil Kopik</p>
+        <p>All right reserverd <i class="fas fa-copyright"></i></p>
+    </footer>
     <script
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

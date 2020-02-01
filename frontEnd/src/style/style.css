@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+
 *, *::after, *::before{
     margin: 0;
     padding: 0;
@@ -48,4 +49,22 @@ body{
 
 .UI > hr{
     background-color: #a49f9e;
+}
+
+footer{
+    height: 10vh;
+    display: grid;
+    justify-self: center;
+    align-self: end;
+    font-size: 12px;
+}
+
+.loguj{
+    display: none;
+    margin-top: 10px;
+}
+
+.loguj > .form-group > .form-control{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

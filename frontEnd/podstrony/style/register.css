@@ -1,0 +1,39 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+.form-control{
+    margin: 1em;
+    width: 300px;
+}
+
+.col, .row{
+    display: grid;
+    justify-items: center;
+}
+.col{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-top: 25%;
+    box-shadow: 3px 2px 17px 3px rgba(0,0,0,0.75);
+}
+.form-group{
+    display: grid;
+    justify-items: center;
+}
+
+h1{
+    padding: 10px;
+}
+
+
+
