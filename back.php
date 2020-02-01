@@ -1,34 +1,25 @@
+
 <?php
-  //Nazwy uzytkowników, haseł, maili, telefonów etc etc
+
+    session_start();
+
+        $login =$_POST['login'];
+        $haslo =$_POST['password'];
+        $host = "127.0.0.1";
+        $password1 = "root";
+        $databaseToConnect = "blog_testowy";
+
+       $connect =mysqli_connect($host,$password1,'',$databaseToConnect)or die('Error' . mysqli_error());
+
+       if($connect == TRUE){
+               echo "Connected";
+       }
+       else{
+               echo "Not connected";
+       }
+       echo $login.'<br>'.$haslo;
 
 
-  // Połaczenie z baza
-   $connectDB = mysqli_connect('localhost','root','blog_testowy')or die('Eror');
-
-
-    //Sprawdzenie czy istnieje
-
-
-
-
-//Sprawdzenie czy jest w bazie danych
-
-
-
-//Dodanie uzytkownika, jego danych
-
-
-
-//Output na ekran
-
-
-
-//Cos jeszcze
-
-
-
-
-mysqli_close($connectDB);
-
+        mysqli_close($connect);
 
 ?>
