@@ -18,7 +18,7 @@
                echo "Not connected";
        }
        echo $login.'<br>'.$haslo;
-
+       echo 'Siemano Kamil :)'
 
         mysqli_close($connect);
 
