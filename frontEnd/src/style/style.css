@@ -16,6 +16,7 @@ body{
     height: 100vh;
 }
 
+
 @media (min-device-width:1200px){
     .UI{
         box-sizing: border-box;
@@ -24,60 +25,61 @@ body{
         display: grid;
     }
 
-    .UI > #user {
-        display: grid;
+
+    .UI > #user >.form-group{
         width: 20%;
-        justify-self: right;
-        justify-content: center;
-    }
-    
-    .UI > #user >.btn-primary {
-        box-sizing: border-box;
-        display: grid;
-        align-content: center;
-    }
-    .UI > #user >.btn-primary > p {
         padding: 0;
-        margin: 0;
-    }
+    } 
     
-    .UI > div {
-        height: 100%;
-        width: 70%;
-        align-self: center;
+    .UI > #user > .form-group > .form-control{
+        width: 300px;
     }
+
+    .UI > #user > article:first-of-type{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .UI > #user > article:first-of-type > .menu{
+        align-self: start;
+    }
+
+
+
+
+
 }
 
 @media (max-device-width:1024px){
     .UI{
         display: none;
     }
-    .form-group{
-        display: grid;
-    }
-    .form-group > .btn-success{
-        justify-self: center;
-    }
 }
 
-.UI > .form-group > hr{
-    background-color: #a49f9e;
+.UI > article >.form-group > hr{
+    background-color: whitesmoke
 }
 
 footer{
     height: 10vh;
-    display: grid;
-    justify-self: center;
     align-self: end;
     font-size: 12px;
 }
 
 .loguj{
-    display: none;
-    margin-top: 10px;
+    transition: opacity 2s linear;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.logujActive{
+    opacity: 1;
+    height: auto;
 }
 
 .loguj > .form-group > .form-control{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
