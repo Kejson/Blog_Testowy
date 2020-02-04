@@ -11,8 +11,9 @@
 */
   
       //Jak nie zadziala na dole i bedzie problem z indexami w htmlu
-         $login = isset($_POST['login']) ? $_POST['login'] : '';
+        /* $login = isset($_POST['login']) ? $_POST['login'] : '';
         $haslo = isset($_POST['hasło']) ? $_POST['hasło'] : '';
+        */
 
 
     // Zbiór wszystkich zmiennych
