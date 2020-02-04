@@ -11,21 +11,26 @@
 */
   
       //Jak nie zadziala na dole i bedzie problem z indexami w htmlu
-        /* $login = isset($_POST['login']) ? $_POST['login'] : '';
+      
+      /*
+      It worked
+        $login = isset($_POST['login']) ? $_POST['login'] : '';
         $haslo = isset($_POST['hasło']) ? $_POST['hasło'] : '';
-        */
-
+        */ 
+        
+ 
+   
 
     // Zbiór wszystkich zmiennych
    $host = "127.0.0.1";
    $password1 = "root";
    $databaseToConnect = "blog_testowy";
-   $name1 =$_POST['name'];
-   $surr1 =$_POST['surr'];
-   $mail1 =$_POST['mail'];
-   $nickname =$_POST['nick'];
-   $password1 =$_POST['pas'];
-   $checkPassword =$_POST['checkPass'];
+   $name1 = isset($_POST['name']) ? $_POST['name'] : '';
+   $surr1 =isset($_POST['surr']) ? $_POST['surr'] : '';
+   $mail1 =isset($_POST['mail']) ? $_POST['mail'] : '';
+   $nickname =isset($_POST['nick']) ? $_POST['nick'] : '';
+   $password1 =isset($_POST['pas']) ? $_POST['pas'] : '';
+   $checkPassword =isset($_POST['checkPass']) ? $_POST['checkPass'] : '';
    $emailCheck = filter_var($mail1, FILTER_SANITIZE_EMAIL);
 
 
@@ -70,15 +75,15 @@
             $Done = false;
             $_SESSION['error_name&surname']="Imię i Nazwisko może składać się tylko z liter!";
         }
-        if(empty($name1) || (empty($surr1) || (empty($mail1) || (empty($nickname) || (empty($password1) || (empty($CheckPassword)))
-          {// wypelnij wszystkie pola}
        if($Done == true){
                //Dodanie do bazy;
-               echo "Tutaj bedzie dodanie do bazy ale jeszcze nie zrobione"; exit();
+               $ask = ("INSERT INTO użytkownicy VALUES ('$name1','$surr1','$mail1','$nickname','$password1')");
+               $queryVersion = mysqli_query($connect,$ask);
+            
+               header('Location: logged.php');
        }  
            
        }
-
 
        //Zakońzcenie połączenia z bazą danych
     mysqli_close($connect);
