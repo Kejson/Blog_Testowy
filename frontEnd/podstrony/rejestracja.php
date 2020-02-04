@@ -117,14 +117,14 @@
             <section class="col mt-5">
                 <h1>Rejestracja</h1>
                 <form class="form-group" method="POST">
-                    <input type='text' placeholder="Imie..." name='name' class="form-control">
+                    <input type='text' placeholder="Imie..." name='name' class="form-control" required>
                     <?php
                         if(isset($_SESSION['error_name&surname'])){
                             echo '<div class="ERROR">'.$_SESSION['error_name&surname'].'</div>';
                             unset($_SESSION['error_name&surname']);
                         }
                     ?>
-                    <input type="text" placeholder="Nazwisko..." name='surr' class="form-control">
+                    <input type="text" placeholder="Nazwisko..." name='surr' class="form-control" required>
                     <?php
                         if(isset($_SESSION['error_name&surname'])){
                             echo '<div class="ERROR">'.$_SESSION['error_name&surname'].'</div>';
@@ -138,21 +138,21 @@
                             unset($_SESSION['error_mail']);
                         }
                     ?>
-                    <input type="text" placeholder="Nick..." name='nick' class="form-control">
+                    <input type="text" placeholder="Nick..." name='nick' class="form-control" required>
                     <?php
                         if(isset($_SESSION['error_nickname'])){
                             echo '<div class="ERROR">'.$_SESSION['error_nickname'].'</div>';
                             unset($_SESSION['error_nickname']);
                         }
                     ?>
-                    <input type="password" placeholder="Hasło..." name='pas' class="form-control">
+                    <input type="password" placeholder="Hasło..." name='pas' class="form-control" required>
                     <?php
                         if(isset($_SESSION['error_haslo'])){
                             echo '<div class="ERROR">'.$_SESSION['error_haslo'].'</div>';
                             unset($_SESSION['error_haslo']);
                         }
                     ?>
-                    <input type="password" placeholder="Potwierdź hasło..." name='checkPass' class="form-control">
+                    <input type="password" placeholder="Potwierdź hasło..." name='checkPass' class="form-control" required>
                     <?php
                         if(isset($_SESSION['error_haslo'])){
                             echo '<div class="ERROR">'.$_SESSION['error_haslo'].'</div>';
