@@ -3,8 +3,7 @@
     session_start();
    
 ?>
-<!DOCTYPE HTML>
-<html>
+<html lang="pl>
   <head>
       <title></title>
   </head>
