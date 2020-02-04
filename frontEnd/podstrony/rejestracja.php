@@ -65,7 +65,8 @@
             $Done = false;
             $_SESSION['error_name&surname']="Imię i Nazwisko może składać się tylko z liter!";
         }
-
+        if(empty($name1) || (empty($surr1) || (empty($mail1) || (empty($nickname) || (empty($password1) || (empty(CheckPassword)))
+          {// wypelnij wszystkie pola}
        if($Done == true){
                //Dodanie do bazy;
                echo "Tutaj bedzie dodanie do bazy ale jeszcze nie zrobione"; exit();
