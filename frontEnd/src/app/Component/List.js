@@ -1,14 +1,12 @@
 import React from 'react'
-import dane from '../Dane/postyDane.json'  
 
-
-let arr = [...dane]
-console.log(arr)
-
-const List = () => {
+const List = ({title,desc,author}) => {
+    
     return(
         <li>
-            {arr.map(e => {return e.title})}
+            <h1>{title}</h1>
+            <p>{desc}</p>
+            <p>{author}</p>
         </li>
     )
 }
