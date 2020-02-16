@@ -1,14 +1,15 @@
 import React from 'react'
 
-const List = ({title,desc,author}) => {
+const List = ( {title,desc,author} ) => {
     
     return(
-        <li>
+        <li key={title}>
             <h1>{title}</h1>
             <p>{desc}</p>
             <p>{author}</p>
         </li>
     )
+
 }
 
 export default List
