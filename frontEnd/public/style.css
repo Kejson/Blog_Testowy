@@ -42,6 +42,12 @@ body{
         align-self: start;
     }
 
+    #root{
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        width: 50%;
+    }
 
 
 
@@ -51,6 +57,9 @@ body{
 @media (max-device-width:1024px){
     .UI{
         display: none;
+    }
+    #root{
+        margin-top: 100px;
     }
 }
 
