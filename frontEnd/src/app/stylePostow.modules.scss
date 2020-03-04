@@ -1,0 +1,29 @@
+li{
+    list-style: none;
+    padding: 20px;
+    border-bottom: 3px solid rgba(0,0,0, 0.4);
+
+    h1{
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid rgba(0,0,0, 0.2);
+    }
+
+    p:last-of-type{
+        span{
+            font-weight: bold;
+        }
+    }
+
+    section:first-of-type{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    section:last-of-type{
+        display: flex;
+        justify-content: space-between;
+    }
+}

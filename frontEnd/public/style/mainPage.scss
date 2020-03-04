@@ -1,0 +1,113 @@
+//Deklaracje zmiennych, miximow
+$dispG : grid;
+$dispF: flex;
+$cent: center;
+
+//----------------------
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    display: $dispG;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media (min-device-width:1200px){
+    .UI{
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        display: $dispG;
+
+        .user{
+            .form-group{
+                width: 20%;
+                padding: 0;
+                .form-control{
+                    width: 300px;
+                }
+            }
+    
+            article:first-of-type{
+                display: $dispF;
+                justify-content: space-between;
+    
+                .menu{
+                    align-self:start;
+                }
+            }
+        }
+    }
+
+    .root{
+        display: $dispF;
+        justify-content: $cent;
+        justify-self: $cent;
+        width: 50%;
+    }
+
+
+
+
+}
+
+@media (max-device-width:1024px){
+    .UI{
+        display: none;
+    }
+    #root{
+        margin-top: 100px;
+    }
+}
+
+.UI{
+    article{
+        .form-group{
+            hr{
+                background-color: whitesmoke;
+            }
+        }
+    }
+}
+
+footer{
+    height: 10vh;
+    align-self: end;
+    font-size: 12px;
+}
+
+.loguj{
+    transition: all 1s ease;
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.logujActive{
+    transition: all 1s ease;
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+}
+
+.loguj{
+    .form-group{
+        .form-control{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.nav-item{
+    font-size: 1.5rem;
+}

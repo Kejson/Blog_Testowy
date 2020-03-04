@@ -3,7 +3,7 @@ import React from 'react'
 const List = ( {title,desc,author,img,src} ) => {
     
     return(
-        <li key={title}>
+        <li>
             <section><img src={img} className='img-fluid img-thumbnail' alt='Obrazek trele morele'></img></section>
             <h1>{title}</h1>
             <p>{desc}</p>
