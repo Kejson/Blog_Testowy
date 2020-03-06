@@ -1,6 +1,5 @@
 import React from 'react'
 import List from './Component/List'
-// import '../style/stylePostow.css'
 import './stylePostow.modules.scss'
 import dane from './Dane/postyDane.json'  
 
